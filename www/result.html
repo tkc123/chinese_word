@@ -1,0 +1,27 @@
+<ons-page>
+	<div id="result_area" ng-controller="resultCtrl as result">
+		<ons-toolbar class="header">
+			<div class="center">
+				中国語単語
+			</div>
+		</ons-toolbar>
+        <div class="content">
+            <div class="result_box">
+                <div class="chart_box">
+                <h1>正解率</h1>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="txt_box">
+                    <p class="detail">{{result.items.totalNum}}4問中 {{result.items.rightNum}}4問正解</p>
+                <p class="score"><span>{{result.items.score}}</span>400<span class="txt_col">point</span></p>    
+                </div>
+                
+            </div>
+            <div class="back-btn">
+                <ons-button modifier="large" ng-click="result.backTop()">
+                	OK
+                </ons-button>
+            </div>
+        </div>
+	</div>
+</ons-page>

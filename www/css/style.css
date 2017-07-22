@@ -1,0 +1,513 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+body {
+line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+display:block;
+}
+nav ul {
+list-style:none;
+}
+
+@keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+ 
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -ms-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+ 
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+ 
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    -ms-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+ 
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    -ms-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+ 
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    -ms-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+ 
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+ 
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+ 
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+ 
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+ 
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+ 
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+ 
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+ 
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -ms-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+ 
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+ 
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    -ms-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+ 
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    -ms-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+ 
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    -ms-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+ 
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* =====================
+  共通header
+===================== */
+
+.header {
+	height: 60px;
+	padding: 0 20px;
+	background: #4CB051;
+	color: #fff;
+	border: 0;
+	font-size: 24px;
+}
+
+.header .left,
+.header .right{
+	line-height: 60px;
+	font-size: 20px;
+}
+
+.header .center {
+	line-height: 60px;
+	color: #fff;
+	font-weight: bold;
+	font-family: "Rounded Mplus 1c";
+}
+
+/*  toolbarが存在している場合高さを調整
+------------------------*/
+
+ons-toolbar ~ .page__content {
+	top: 60px;
+}
+
+/* =====================
+  top_area
+===================== */
+
+#top_area {
+	width: 100%;
+	height: 100%;
+	background: #4CB051;
+}
+
+#top_area .title {
+	padding: 16% 8% 24% 8%;
+}
+
+#top_area .title img {
+	width: 100%;
+	height: auto;
+}
+
+#top_area .character {
+	padding: 0 24% 20% 24%;
+}
+
+#top_area .character img {
+	width: 100%;
+	height: auto;
+}
+
+#top_area .txt {
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* =====================
+  select_area
+===================== */
+
+#select_area .content img {
+	width: 80%;
+	height: 80%;
+}
+
+
+
+/* =====================
+  share_area
+===================== */
+
+#share_area .content .share_box {
+    margin: 10% 0 0 0;
+}
+
+#share_area .content .twitter,
+#share_area .content .facebook,
+#share_area .content .app {
+    margin: 0 5% 8% 5%;
+    text-align: center;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+#share_area .content p {
+    color: #ffffff;
+}
+
+#share_area .content p i {
+    margin: 0 10px 0 0;
+}
+
+#share_area .content .twitter {
+    background: #55acee;
+}
+
+#share_area .content .facebook {
+    background: #315096;   
+}
+
+#share_area .content .app {
+    background: #4CB051;
+}
+
+#share_area .content .comment {
+    margin: 0;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-flex-direction: column; /* Safari */
+    flex-direction:         column;
+    padding: 10% 5%;
+    background: #dddddd;
+}
+
+#share_area .content .comment .left_box {
+    position: relative;
+	display: inline-block;
+	width: 80%;
+	height: 50px;
+    margin: 0 auto 0 0;
+	color: #F6F6F6;
+	line-height: 50px;
+	text-align: left;
+	background: #4CB051;
+	border-radius: 5px;
+	z-index: 0;
+}
+
+#share_area .content .comment .left_box:before {
+    content: "";
+	position: absolute;
+	bottom: -25px; right: 25%;
+	margin-left: 0;
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: #4CB051;
+	border-radius: 50%;
+	z-index: 0;
+}
+
+#share_area .content .comment .left_box:after {
+	content: "";
+	position: absolute;
+	bottom: -40px; right: 18%;
+	margin-left: 0;
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: #4CB051;
+	border-radius: 50%;
+	z-index: 0;
+}
+
+#share_area .content .comment .left_box p {
+    margin: 0 0 0 4%;
+}
+
+#share_area .content .comment .right_box {
+    width: 80px;
+    height: auto;
+    margin: 10% 0 0 auto;
+}
+
+#share_area .content .comment .right_box img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* =====================
+  user_area
+===================== */
+
+#user_area .content {
+    margin: 10% 0 0 0;
+}
+
+#user_area .content h1 {
+    text-align: center;
+    color: #444444;
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin: 0 0 5% 0;
+}
+
+#user_area .content .chart_box {
+    margin: 0 0 10% 0;
+}
+
+#user_area .content .txt_box {
+    margin: 0 0 10% 0;
+}
+
+#user_area .content .button_box {
+    text-align: center;
+}
+
+#user_area .content .button_box button {
+    width: 90%;
+    margin: 0 5%;
+    background: #4CB051;
+    border: 0;
+    padding: 4% 6%;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+/* =====================
+  game_area
+===================== */
+
+#game_area .content {
+}
+
+#game_area .content .qst_data {
+	width: 90%;
+	margin: 4% 5%;
+}
+
+#game_area .content .qst_data .right {
+	text-align: right;
+}
+
+
+#game_area .content .txt_data {
+	margin: 0;
+}
+
+
+#game_area .content .title {
+	font-size: 80px;
+	text-align: center;
+	font-weight: normal;
+	margin: 2% 0 8% 0;
+	color: #444444;
+}
+
+#game_area .content .pinyin {
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0 0 4% 0; 
+}
+
+#game_area .content .pinyin span {
+	margin: 0 6% 0 0;
+	color: #444444;
+}
+
+#game_area .content .pinyin i {
+	background: #4caf50;
+	border-radius: 18px; 
+	color: #ffffff;
+	padding: 6px;
+}
+
+#game_area .content button {
+	height: 60px;
+    margin: 0 5% 6% 5%;
+    border-radius: 30px;
+    background: #e5e5e5;
+    color: #444444;
+}
+
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+/* =====================
+  result_area
+===================== */
+
+
+#result_area .content h1 {
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 10% 0 5% 0;
+    color: #444444;
+}
+
+#result_area .content canvas {
+	width: 100%;
+      height: auto;
+      max-width: 500px;	
+}
+
+#result_area .content .txt_box {
+    margin: 10% 5%;
+}
+
+#result_area .content .txt_box p {
+    margin: 0 0 2% 0;
+}
+
+#result_area .content .txt_box .detail {
+    margin: 0 0 5% 0;
+}
+
+#result_area .content .txt_box .score {
+    font-size: 80px;
+    font-weight: bold;
+    color: #4caf50;
+    text-align: center;
+}
+
+#result_area .content .txt_box p span {
+    color: #444444;
+    font-size: 20px; 
+    font-weight: normal;
+    margin: 0 0 0 8px;
+    }
+
+#result_area .content .back-btn ons-button {
+    width: 90%;
+    margin: 0 5%;
+    background: #4caf50;
+}
+
+
+
+
+
+

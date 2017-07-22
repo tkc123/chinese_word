@@ -1,0 +1,38 @@
+<ons-page>
+    <div id="share_area" ng-controller="shareCtrl as share">
+		<ons-toolbar class="header">
+			<div class="left">
+				<p><i class="fa fa-share-square-o" aria-hidden="true" ng-click="share.shareReturn()"></i></p>
+			</div>
+			<div class="center">
+				<p>中国語単語</p>
+			</div>
+			<div class="right">
+				<p><i class="fa fa-bars" aria-hidden="true" ng-click="share.userMove()"></i></p>
+			</div>
+		</ons-toolbar>
+		<div class="content">
+            <div class="share_box">
+                <ons-row>
+                    <ons-col class="twitter" width="90%">
+                        <p><i class="fa fa-twitter" aria-hidden="true"></i>Tweetする</p>
+                    </ons-col>
+                    <ons-col class="facebook" width="90%">
+                        <p><i class="fa fa-facebook" aria-hidden="true"></i>シェアする</p>
+                    </ons-col>
+                    <ons-col class="app" width="90%">
+                        <p><i class="fa fa-star" aria-hidden="true"></i>アプリの評価をする</p>
+                    </ons-col>
+                </ons-row>
+            </div>
+            <div class="comment">
+                <div class="left_box">
+                    <p>是非シェアお願いします！</p>
+                </div>
+                <div class="right_box">
+                    <img src="img/top/top_character.png">
+                </div>
+            </div>
+		</div>
+	</div>
+</ons-page>

@@ -1,0 +1,22 @@
+<ons-page>
+	<div id="select_area" ng-controller="selectCtrl as select">
+		<ons-toolbar class="header" style="position: static;">
+			<div class="left">
+				<p><i class="fa fa-share-square-o" aria-hidden="true" ng-click="select.shareMove()"></i></p>
+			</div>
+			<div class="center">
+				<p>中国語単語</p>
+			</div>
+			<div class="right">
+				<p><i class="fa fa-bars" aria-hidden="true" ng-click="select.userMove()"></i></p>
+			</div>
+		</ons-toolbar>
+		<div class="content">
+			<ons-row align="middle">
+				<ons-col width="33.3%">
+					<img src="img/sss.jpg" ng-click="select.gameStart()"><p>text<p>
+				</ons-col>
+			</ons-row>
+		</div>
+	</div>
+</ons-page>

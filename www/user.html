@@ -1,0 +1,33 @@
+<ons-page>
+	<div id="user_area" ng-controller="userCtrl as user">
+		<ons-toolbar class="header">
+			<div class="left">
+				<p><i class="fa fa-share-square-o" aria-hidden="true" ng-click="user.shareMove()"></i></p>
+			</div>
+			<div class="center">
+				<p>中国語単語</p>
+			</div>
+			<div class="right" ng-click="user.userReturn()">
+				<p><i class="fa fa-times" aria-hidden="true"></i></p>
+			</div>
+		</ons-toolbar>
+		<div class="content">
+        
+    		<h1>正解率</h1>
+            <div class="chart_box">
+    			<canvas id="myChart"></canvas>
+    		</div>
+            <div class="txt_box">
+                <ul>
+                    <li>text...text...</li>
+                    <li>text...text...</li>
+                    <li>text...text...</li>
+                </ul>
+            </div>
+           <div class="button_box">
+               <button>復習をする</button>
+           </div>
+          
+	    </div>
+	</div>
+</ons-page>
